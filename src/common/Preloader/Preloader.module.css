@@ -1,0 +1,10 @@
+.preloader {
+    grid-area: c;
+    width: 250px;
+    height: 250px;
+    position: relative ;
+    top: 50%;
+    left: 50%;
+    margin: 150px 0 0 -125px;
+ 
+}

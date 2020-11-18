@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { Provider } from 'react-redux';
+import { BrowserRouter, Redirect, Route } from 'react-router-dom';
+import s from './App.module.css';
+import DetailsContainer from './components/Details/DetailsContainer';
+import Header from './components/Header/Header';
+import WeatherContainer from './components/Weather/WeatherContainer';
+import store from './redux/store';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <BrowserRouter>
+    <Provider store={store}>
+    <div className={s.appWrapper}>
+    <Header />
+    <div className={s.appWrapperContent}>
+      <Route exact path="/" render={() =><Redirect from="/" to="/cities" />}/>
+      <Route exact path="/cities" render={ () => <WeatherContainer /> } /> 
+      <Route exact path="/cities/:id" render={ () => <DetailsContainer /> } /> 
     </div>
+
+    </div>
+    </Provider>
+    
+    </BrowserRouter>
+    
   );
 }
 

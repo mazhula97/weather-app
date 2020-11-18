@@ -1,0 +1,21 @@
+.appWrapper {
+    margin: 0 auto;
+    display: grid;
+    
+    max-width: 986px;
+    grid-template-areas: 
+    " h "
+    " c ";
+    grid-template-rows: 60px 1fr;
+    grid-gap: 10px;
+   
+}
+.appWrapperContent {
+    grid-area: c;
+   
+    min-height: 500px;
+   
+    background-color: var(--cbc);
+    border-radius: var(--br);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}

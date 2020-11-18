@@ -1,0 +1,36 @@
+.weather {
+  padding: 10px;
+}
+.createForm {
+  text-align: center;
+  margin: 15px 0px 15px 0px;
+}
+.createForm input {
+  border-radius: var(--br);
+}
+.createForm button {
+  border-radius: var(--br);
+}
+.weather a {
+  text-decoration: none;
+}
+.weatherItemBlock {
+  /* padding-left: 100px; */
+  text-align: justify;
+}
+.preloader {
+  width: 250px;
+  height: 250px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  margin: -125px 0 0 -125px;
+}
+.cover {
+  margin-top: 70px;
+  text-align: center;
+  font-size: 80px;
+  font-weight: bold;
+  color: rgb(59, 6, 90);
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
