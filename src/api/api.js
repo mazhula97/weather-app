@@ -1,7 +1,6 @@
 import * as axios from "axios";
 
 let API_KEY = "16cc9f6b27a98cce64e2b6870013a68b";
-// let cityName = "London";
 
 export const weatherAPI = {
    

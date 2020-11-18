@@ -6,7 +6,7 @@ import Details from "./Details";
 const mapStateToProps = (state) => {
   return {
     cities: state.weatherPage.cities,
-    detailPage: state.weatherPage.ddetailPage
+    detailPage: state.weatherPage.detailPage
   };
 };
 

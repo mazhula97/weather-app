@@ -5,8 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  --bcc:  rgb(0, 0, 0);/* header BAckground */
-  --cbc: rgb(199, 200, 212); /* Content background */
+  --bcc:  rgb(26, 0, 143);/* header BAckground */
+  --cbc: rgb(0, 0, 0); /* Content background */
   --br: 7px; /* Dorder radius */
 }
 
