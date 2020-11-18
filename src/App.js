@@ -1,5 +1,5 @@
 import { Provider } from 'react-redux';
-import { BrowserRouter, Redirect, Route } from 'react-router-dom';
+import { HashRouter, Redirect, Route } from 'react-router-dom';
 import s from './App.module.css';
 import DetailsContainer from './components/Details/DetailsContainer';
 import Header from './components/Header/Header';
@@ -8,7 +8,7 @@ import store from './redux/store';
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
     <Provider store={store}>
     <div className={s.appWrapper}>
     <Header />
@@ -21,7 +21,7 @@ const App = () => {
     </div>
     </Provider>
     
-    </BrowserRouter>
+    </HashRouter>
     
   );
 }
