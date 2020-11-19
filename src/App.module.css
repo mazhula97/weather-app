@@ -15,8 +15,7 @@
    
     min-height: 500px;
    
-    background: rgb(19,18,19);
-background: linear-gradient(180deg, rgba(19,18,19,1) 0%, rgba(57,58,74,1) 13%, rgba(27,34,113,1) 30%, rgba(0,0,0,1) 41%, rgba(41,52,170,1) 50%, rgba(23,24,27,1) 60%, rgba(36,44,137,1) 70%, rgba(28,30,47,1) 87%, rgba(0,0,0,1) 100%);
+   background-color: black;
     border-radius: var(--br);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }

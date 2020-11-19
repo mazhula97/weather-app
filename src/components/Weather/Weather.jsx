@@ -7,6 +7,7 @@ import s from "./Weather.module.css";
 import WeatherItem from "./WeatherItem/WeatherItem";
 
 const Weather = (props) => {
+  
   const [newCityName, setNewCityName] = useState("");
 
   useEffect(() => {
@@ -18,7 +19,7 @@ const Weather = (props) => {
     if (
       !props.cities ||
       props.cities.length === 0 ||
-      props.cities.some((item) => item.name !== newCityName)
+      props.cities.some((c) => c.name !== newCityName)
     ) {
       props.getWeather(newCityName);
     } else {
@@ -26,7 +27,7 @@ const Weather = (props) => {
     }
   };
   const onCityChange = (e) => {
-    setNewCityName(e.currentTarget.value);
+    setNewCityName(e.currentTarget.value)
   };
   return (
     <div className={s.weather}>

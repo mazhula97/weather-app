@@ -15,11 +15,11 @@ let initialState = {
     cities: cities ? JSON.parse(cities) : [],
     detailPage: null,
     newCityName: "",
-    loading: false
+    loading: false,
 }
 
 export const weatherReducer = (state = initialState, action) => {
-  console.log(state, action)
+ 
     switch (action.type) {
         case ADD_CARD:
             return {
@@ -33,26 +33,32 @@ export const weatherReducer = (state = initialState, action) => {
                     loading: false,
                     newCityName: ""
                 }
+        // case ADD_CARD_ERROR:
+          
+        // return {
+        //                 ...state,
+        //                 error: alert(action.payload.message)
+        //         }
         case DELETE_CARD:
             return {
                     ...state,
                     cities: state.cities.filter(c => c.name !== action.payload)
-     }       
+                }       
      
         case GET_CARD: 
           const index = state.cities.findIndex((c) => c.name === action.payload.name )    
             return {
                     ...state,
                      cities: [...state.cities.slice(0, index), action.payload, ...state.cities.slice(index + 1, cities.length - 1)]      
-     }
+                }
         case GET_DETAILS:
             return {
                ...state,
                detailPage: action.payload
-            }
+                }
         default:
              return state;
-      }
+    }
 
 }
 
@@ -63,8 +69,8 @@ export const addCardActionCreator = (newCityName) => {
 export const addCardSuccessActionCreator = (cities) => {
     return { type: ADD_CARD_SUCCESS, payload: cities }
 }
-export const addCardErrorActionCreator = () => {
-    return { type: ADD_CARD_ERROR }
+export const addCardErrorActionCreator = (error) => {
+    return { type: ADD_CARD_ERROR, payload: error }
 }
 export const deleteCard = (cityName) => {
     return { type: DELETE_CARD, payload: cityName }
@@ -78,7 +84,7 @@ export const getDetails = (detailPage) => {
 
 
 export const getWeatherThunkCreator = (newCityName) => async (dispatch) => {
-   
+  
     dispatch(addCardActionCreator(newCityName))
     try{
         let response = await weatherAPI.getWeather(newCityName)
@@ -86,6 +92,7 @@ export const getWeatherThunkCreator = (newCityName) => async (dispatch) => {
 
     } catch(e) {
         dispatch(addCardErrorActionCreator)
+        alert(`${e.message} \nIncorrect city name`)
     } 
 }
 

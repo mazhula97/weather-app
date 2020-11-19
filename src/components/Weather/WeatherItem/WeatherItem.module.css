@@ -1,6 +1,6 @@
 .weatherItem {
   display: inline-block;
-  width: 302px ;
+  width: 302px;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
   margin: 10px;
   border-radius: var(--br);
@@ -8,16 +8,14 @@
 }
 .weatherCard {
   border-radius: var(--br);
- 
 }
 .temperature {
   text-decoration: none;
-  color: rgb(59, 6, 90);
+  color: var(--bcc);
   text-align: center;
   font-size: 90px;
   font-weight: bold;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 .countryName {
   font-weight: bold;
@@ -27,8 +25,8 @@
   font-weight: 500;
 }
 .title {
-  font-size: 30px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: 600;
   text-shadow: 0 0 3px rgb(32, 35, 63, 0.3);
 }

@@ -32,8 +32,14 @@ const Details = (props) => {
         </div>
       </div>
       <div className={s.suncycle}>
-        <div className={s.sunrise}><h1>Sunrise:</h1>{` ${new Date(dw.sys.sunrise*1000)}`}</div>
-        <div className={s.sunset}><h1>Sunset:</h1>{` ${new Date(dw.sys.sunset*1000)}`}</div>
+        <div className={s.sunrise}>
+          <h1>Sunrise:</h1>
+          {` ${new Date(dw.sys.sunrise * 1000)}`}
+        </div>
+        <div className={s.sunset}>
+          <h1>Sunset:</h1>
+          {` ${new Date(dw.sys.sunset * 1000)}`}
+        </div>
         <div></div>
       </div>
     </div>

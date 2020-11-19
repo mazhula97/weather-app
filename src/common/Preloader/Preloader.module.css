@@ -1,8 +1,7 @@
 .preloader {
-    grid-area: c;
-    position: relative ;
-    top: 50%;
-    left: 50%;
-    margin: 135px 0 0 -125px;
- 
+  grid-area: c;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  margin: 135px 0 0 -125px;
 }

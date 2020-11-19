@@ -55,9 +55,7 @@ const WeatherItem = (props) => {
             <div className={s.shortDescription}>
               <div>{`Temp min: ${Math.round(props.minTemp - 273.15)}°`}</div>
               <div>{`Temp max: ${Math.round(props.maxTemp - 273.15)}°`}</div>
-              <div
-                className={s.countryName}
-              >{`Country:  ${props.country}`}</div>
+              <div className={s.countryName}>{`Country:  ${props.country}`}</div>
             </div>
           }
         />

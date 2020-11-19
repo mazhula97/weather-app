@@ -11,16 +11,15 @@
 /* Button*/
 .createForm button {
   border-radius: var(--br);
-  background-color:  rgb(26, 0, 143);
+  background-color: rgb(26, 0, 143);
   color: white;
 }
 .createForm button:hover {
-  
-  background-color:  rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
   color: rgb(26, 0, 143);
 }
 .createForm button:active {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .weather a {

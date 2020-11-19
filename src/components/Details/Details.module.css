@@ -12,7 +12,7 @@
   grid-template-columns: 1fr 150px;
 
   padding: 0 10px 0 10px;
-  background: rgb(2,0,36);
+  background: rgb(2, 0, 36);
   background: var(--bwd);
   box-shadow: var(--bs);
   border-radius: var(--br);
@@ -41,7 +41,7 @@
 .clouds {
   width: 100px;
 
-  background: rgb(2,0,36);
+  background: rgb(2, 0, 36);
   background: var(--bwd);
   box-shadow: var(--bs);
 
@@ -64,7 +64,7 @@
   grid-template-rows: 20px 20px 20px;
   grid-gap: 10px;
 
-  background: rgb(2,0,36);
+  background: rgb(2, 0, 36);
   background: var(--bwd);
   box-shadow: var(--bs);
   border-radius: var(--br);
@@ -82,14 +82,14 @@
   font-size: 20px;
 }
 .sunrise {
-  background: rgb(2,0,36);
+  background: rgb(2, 0, 36);
   background: var(--bwd);
   box-shadow: var(--bs);
   border-radius: var(--br);
   padding: 10px;
 }
 .sunset {
-  background: rgb(2,0,36);
+  background: rgb(2, 0, 36);
   background: var(--bwd);
   box-shadow: var(--bs);
   border-radius: var(--br);
@@ -97,7 +97,7 @@
 }
 @media (max-width: 600px) {
   .mainInfo {
-   font-size: 13px;
-   padding: 10px 0 10px 0;
+    font-size: 13px;
+    padding: 10px 0 10px 0;
   }
 }

@@ -1,8 +1,10 @@
 import { connect } from "react-redux";
-import { deleteCard, getCardThunkCreator, getWeatherThunkCreator } from "../../redux/weather-reducer";
+import {
+  deleteCard,
+  getCardThunkCreator,
+  getWeatherThunkCreator,
+} from "../../redux/weather-reducer";
 import Weather from "./Weather";
-
-
 
 let mapStateToProps = (state) => {
   return {
@@ -15,6 +17,5 @@ let mapStateToProps = (state) => {
 export default connect(mapStateToProps, {
   getWeather: getWeatherThunkCreator,
   getCard: getCardThunkCreator,
-  deleteCard
+  deleteCard,
 })(Weather);
-
