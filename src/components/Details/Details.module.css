@@ -12,7 +12,8 @@
   grid-template-columns: 1fr 150px;
 
   padding: 0 10px 0 10px;
-  background-color: var(--bwd);
+  background: rgb(2,0,36);
+  background: var(--bwd);
   box-shadow: var(--bs);
   border-radius: var(--br);
 
@@ -40,7 +41,8 @@
 .clouds {
   width: 100px;
 
-  background-color: var(--bwd);
+  background: rgb(2,0,36);
+  background: var(--bwd);
   box-shadow: var(--bs);
 
   border-radius: var(--br);
@@ -62,7 +64,8 @@
   grid-template-rows: 20px 20px 20px;
   grid-gap: 10px;
 
-  background-color: var(--bwd);
+  background: rgb(2,0,36);
+  background: var(--bwd);
   box-shadow: var(--bs);
   border-radius: var(--br);
 
@@ -75,17 +78,19 @@
 .suncycle {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 10px;
+  grid-gap: 30px;
   font-size: 20px;
 }
 .sunrise {
-  background-color: var(--bwd);
+  background: rgb(2,0,36);
+  background: var(--bwd);
   box-shadow: var(--bs);
   border-radius: var(--br);
   padding: 10px;
 }
 .sunset {
-  background-color: var(--bwd);
+  background: rgb(2,0,36);
+  background: var(--bwd);
   box-shadow: var(--bs);
   border-radius: var(--br);
   padding: 10px;

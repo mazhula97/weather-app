@@ -8,7 +8,7 @@ body {
   --bcc: rgb(26, 0, 143); /* header BAckground */
   --cbc: rgb(0, 0, 0); /* Content background */
   --br: 7px; /* Dorder radius */
-  --bwd: rgb(255, 255, 255); /* Background weather "Description"*/
+  --bwd: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(135,175,255,1) 0%, rgba(0,212,255,1) 100%); /* Background weather "Description"*/
   --dtc: black; /*Description text color*/
   --bs: 0 0 20px rgba(255, 255, 255, 0.8); /*Box-shadow*/
 }
