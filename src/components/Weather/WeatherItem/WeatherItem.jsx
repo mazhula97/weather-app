@@ -7,14 +7,11 @@ const WeatherItem = (props) => {
   // const icon = {props.weather.icon};
   const { Meta } = Card;
 
-
   const onDeleteClick = (cityName) => {
     props.deleteCard(cityName);
   };
   const onUpdateClick = (cityName) => {
-    
     props.getCard(cityName);
-  
   };
   return (
     <div className={s.weatherItem}>
@@ -22,15 +19,17 @@ const WeatherItem = (props) => {
         className={s.weatherCard}
         style={{ width: 300 }}
         cover={
-          <Link to={{ 
-            pathname: `/cities/${props.name}`,
-          }}>
+          <Link
+            to={{
+              pathname: `/cities/${props.name}`,
+            }}
+          >
             <div className={s.temperature} title={"Detail weather"}>
               {`${Math.round(props.temp - 273.15)}°`}
             </div>
           </Link>
         }
-        actions={[ 
+        actions={[
           <UndoOutlined
             key="refresh"
             onClick={() => {
@@ -51,11 +50,11 @@ const WeatherItem = (props) => {
               src={`http://openweathermap.org/img/w/${props.weather[0].icon}.png`}
             />
           }
-          title={props.name}
+          title={<div className={s.title}>{props.name}</div>}
           description={
-            <div>
-              <div>{`Temp min: ${Math.round(props.minTemp - 273.15)}`}</div>
-              <div>{`Temp max: ${Math.round(props.maxTemp - 273.15)}`}</div>
+            <div className={s.shortDescription}>
+              <div>{`Temp min: ${Math.round(props.minTemp - 273.15)}°`}</div>
+              <div>{`Temp max: ${Math.round(props.maxTemp - 273.15)}°`}</div>
               <div
                 className={s.countryName}
               >{`Country:  ${props.country}`}</div>

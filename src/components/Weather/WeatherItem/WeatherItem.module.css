@@ -3,7 +3,7 @@
   width: 302px ;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
   margin: 10px;
-  /* border: 1px solid red; */
+  border-radius: var(--br);
   justify-content: center;
 }
 .weatherCard {
@@ -21,4 +21,14 @@
 }
 .countryName {
   font-weight: bold;
+}
+.shortDescription {
+  color: rgba(30, 33, 39, 0.61);
+  font-weight: 500;
+}
+.title {
+  font-size: 30px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 600;
+  text-shadow: 0 0 3px rgb(32, 35, 63, 0.3);
 }

@@ -15,7 +15,7 @@ const App = () => {
     <div className={s.appWrapperContent}>
       <Route exact path="/" render={() =><Redirect from="/" to="/cities" />}/>
       <Route exact path="/cities" render={ () => <WeatherContainer /> } /> 
-      <Route exact path="/cities/:id" render={ () => <DetailsContainer /> } /> 
+      <Route exact path="/cities/:cityName" render={ () => <DetailsContainer /> } /> 
     </div>
 
     </div>

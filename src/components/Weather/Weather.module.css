@@ -20,7 +20,7 @@
   color: rgb(26, 0, 143);
 }
 .createForm button:active {
-    border: none;
+    text-decoration: none;
 }
 
 .weather a {

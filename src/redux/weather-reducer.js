@@ -40,7 +40,7 @@ export const weatherReducer = (state = initialState, action) => {
      }       
      
         case GET_CARD: 
-          const index = state.cities.findIndex((c) => c.name == action.payload.name )    
+          const index = state.cities.findIndex((c) => c.name === action.payload.name )    
             return {
                     ...state,
                      cities: [...state.cities.slice(0, index), action.payload, ...state.cities.slice(index + 1, cities.length - 1)]      
@@ -72,8 +72,8 @@ export const deleteCard = (cityName) => {
 export const getCard = (cityName) => {
     return { type: GET_CARD, payload: cityName }
 }
-export const getDetails = (cityName) => {
-    return { type: GET_DETAILS, payload: cityName }
+export const getDetails = (detailPage) => {
+    return { type: GET_DETAILS, payload: detailPage}
 }
 
 
