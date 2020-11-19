@@ -7,7 +7,7 @@ const ADD_CARD_ERROR = "ADD-CARD-ERROR"
 const DELETE_CARD = "DELETE-CARD"
 const GET_CARD = "GET-CARD"
 const GET_DETAILS = "GET-DETAILS"
-// const SAVE_CARDS = "SAVE-CARDS"
+
 
 const cities = localStorage.getItem("cities")
 
@@ -33,12 +33,6 @@ export const weatherReducer = (state = initialState, action) => {
                     loading: false,
                     newCityName: ""
                 }
-        // case ADD_CARD_ERROR:
-          
-        // return {
-        //                 ...state,
-        //                 error: alert(action.payload.message)
-        //         }
         case DELETE_CARD:
             return {
                     ...state,

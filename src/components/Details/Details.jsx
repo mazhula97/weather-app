@@ -2,10 +2,9 @@ import React, { useEffect } from "react";
 import { getCard } from "../../redux/weather-reducer";
 import s from "./Details.module.css";
 const Details = (props) => {
-  // useEffect(() => {
-  // getCard(props.cities.name)
-  //   }, [props.cities]);
+ 
   let dw = props.detailPage;
+  
   return (
     <div className={s.detailBlock}>
       <div className={s.nameImageCountry}>

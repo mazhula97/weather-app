@@ -4,7 +4,7 @@ import { Card } from "antd";
 import { DeleteOutlined, UndoOutlined } from "@ant-design/icons";
 import { Link, NavLink } from "react-router-dom";
 const WeatherItem = (props) => {
-  // const icon = {props.weather.icon};
+ 
   const { Meta } = Card;
 
   const onDeleteClick = (cityName) => {

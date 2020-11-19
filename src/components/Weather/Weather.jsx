@@ -1,8 +1,5 @@
-import { Button } from "antd";
-import * as axios from "axios";
 import React, { useEffect, useState } from "react";
 import Preloader from "../../common/Preloader/Preloader";
-
 import s from "./Weather.module.css";
 import WeatherItem from "./WeatherItem/WeatherItem";
 
