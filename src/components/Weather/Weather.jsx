@@ -36,7 +36,7 @@ const Weather = (props) => {
             name="city"
             onChange={onCityChange}
           />
-          <button>Create card</button>
+          <button>Search</button>
         </form>
       </div>
       <div className={s.weatherItemBlock}>
